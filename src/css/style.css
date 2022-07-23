@@ -1,0 +1,86 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* НАЧАЛО ШАПКИ */
+
+nav {
+    height: 52px;
+    background: #212121;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 70px;
+    margin: 0;
+    list-style: none;
+}
+
+.menu .menu__item {
+    border-right: 2px dotted black;
+    padding-right: 42px;
+}
+
+.menu .menu__item:nth-last-child(1) {
+    border-right: none;
+}
+
+.menu .menu__item-link {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.subheader {
+    height: 84px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.subheader .subheader__logo {
+    display: block;
+    max-width: 100%;
+    margin-top: 16px;
+}
+
+.subheader .subheader__official {
+    margin-top: 6px;
+    opacity: 0.5;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.subheader .subheader__call {
+    margin-top: 19px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 300;
+    text-align: right;
+}
+
+.subheader .subheader__phone {
+    display: block;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    text-align: right;
+    margin-top: 8px;
+    line-height: 12px;
+}
+
+.subheader .subheader__btn {
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    border: none;
+    border-radius: 8px;
+    background-image: linear-gradient(to top, #1EACC7 0%, #4CE2FF 100%);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* КОНЕЦ ШАПКИ */
