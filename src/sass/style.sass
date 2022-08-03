@@ -238,6 +238,22 @@ nav
 			left: 50%
 			transform: translateX(-50%)
 			cursor: pointer
+			&:before
+				content: ''
+				display: block
+				width: 14px
+				height: 2px
+				background-color: $main-color
+			&:after
+				content: ''
+				position: absolute
+				display: block
+				width: 2px
+				height: 14px
+				background-color: $main-color
+			&:hover
+				&:before, &:after
+					background-color: $second-color
 
 .opportunities
 	min-height: 889px
