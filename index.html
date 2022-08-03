@@ -1,155 +1,275 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-        <title>Bootstrap</title>
+        <!-- Styles from SASS -->
+        <link rel="stylesheet" href="./src/css/style.min.css">
+
+        <title>Bootstrap-test</title>
     </head>
     <body>
 
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">Главная</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-      
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                        </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                    </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-
-        <div class="container">
+        <!-- НАЧАЛО ШАПКИ -->
         
-            <div class="row">
-                
-                <div class="col">
-                    <div class="card mt-5" style="width: 18rem;">
-                    <img src="https://m.media-amazon.com/images/I/51kK0zuk9rL._SL500_.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <header>
+
+            <nav>
+                <div class="container">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="#" class="menu__item-link">Главная</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link">Со своим автомобилем</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link">На автомобиле компании</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link">Требования</a></li>
+                        <li class="menu__item"><a href="#" class="menu__item-link">Оставить заявку</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="subheader">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 offset-md-1">
+                            <a href="#" class="logo"><img src="./src/img/Uber.png" alt="logo"></a>
+                            <div class="official">Официальный партнер Uber в Москве</div>
+                        </div>
+                        <div class="col-md-2 offset-md-2">
+                            <div class="call">
+                                Звоните нам ежедневно
+                            </div>
+                            <a href="tel:84957970988" class="phone">8 495 797 09 88</a>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn">Заказать звонок</button>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="col">
-                    <div class="card mt-5 " style="width: 18rem;">
-                    <img src="https://m.media-amazon.com/images/I/51kK0zuk9rL._SL500_.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+        </header>
+
+        <!-- КОНЕЦ ШАПКИ -->
+        
+        <!-- НАЧАЛО ПЕРВОЙ СЕКЦИИ -->
+
+        <section class="promo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <h1 class="promo__header">
+                            Компания Uber Partners!
+                        </h1>
+                        <h2 class="promo__subheader">
+                            Приглашаем водителей на своем авто!
+                        </h2>
+                        <div class="promo__description">
+                            Компания UBER динамически развивающаяся. Компания на рынке занимает лидирующее место средитаксомоторных компаний, Компания абсолютно прозрачная вы можете контролировать все процессы у себя в личном кабинете. Бонуcная система.Помимо выполненной работы по заказам, компания начисляет бонусы запиковое время.
+                            <br/><br/>
+                            Мы одни из партнеров и зарекомендовали себя как одна из лучших команд в городе Москве. Водители у нас зарабатывают от 80000-120000 в месяц.
                         </div>
+                        <button class="promo__btn">Отправить заявку!</button>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="col">
-                    <div class="card mt-5 " style="width: 18rem;">
-                    <img src="https://m.media-amazon.com/images/I/51kK0zuk9rL._SL500_.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
+        <!-- КОНЕЦ ПЕРВОЙ СЕКЦИИ -->
+
+        <!-- НАЧАЛО ВТОРОЙ СЕКЦИИ -->
+
+        <section class="benefits">
+
+            <div class="container">
+
+                <article class="label">
+                    Преимущества
+                </article>
+
+                <article class="title">
+                    8 причин начать работать с нами
+                </article>
+
+                <div class="row benefits-row align-items-center">
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="benefits__block d-flex align-items-center justify-content-center">
+                            <img src="./src/icons/icon-1.png" alt="icon-1" class="benefits__icon">
                         </div>
                     </div>
-                </div>
+                    <div class="col-4 align-self-start">
+                        <h4 class="benefits__title">Никаких наличных, оплата происходит автоматически</h4>
+                        <p class="benefits__text">Стоимость поездки оплачивается пассажиром с привязанной банковской карты, т.е. нет никаких рисков связанных с перевозкой наличности как для пассажира, так и для водителя, Вам не нужно искать мелкие деньги для размена.</p>
+                    </div>
 
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="benefits__block d-flex align-items-center justify-content-center">
+                            <img src="./src/icons/icon-2.png" alt="icon-2" class="benefits__icon">
+                        </div>
+                    </div>
+                    <div class="col-4 align-self-start">
+                        <h4 class="benefits__title">Комиссия 8% + БОНУСЫ</h4>
+                        <p class="benefits__text">У нас минимальная комиссия и мы выплачиваем бонусы за каждую поездку, некоторые наши конкуренты оставляют бонусы себе. Мы работаем честно и с нами водители зарабатывают больше!</p>
+                    </div>
+
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="benefits__block d-flex align-items-center justify-content-center">
+                            <img src="./src/icons/icon-3.png" alt="icon-3" class="benefits__icon">
+                        </div>
+                    </div>
+                    <div class="col-4 align-self-start">
+                        <h4 class="benefits__title">Высокий доход с гарантированными выплатами</h4>
+                        <p class="benefits__text">Мы выплачиваем заработную плату на личную банковскую карту водителя! Вам не нужно оформлять ООО, ИП, платить налоги, подавать декларацию, оплачивать бухгалтерские услуги и ведение банковского счета.</p>
+                    </div>
+
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="benefits__block d-flex align-items-center justify-content-center">
+                            <img src="./src/icons/icon-4.png" alt="icon-4" class="benefits__icon">
+                        </div>
+                    </div>
+                    <div class="col-4 align-self-start">
+                        <h4 class="benefits__title">Работа в удобное время, никаких графиков</h4>
+                        <p class="benefits__text">Вы просто нажимаете кнопку выйти на линию для начала работы, когда решите закончить, нажимаете выйти с линии. Вы можете подрабатывать только утром, вечером, в выходные или праздничные дни!</p>
+                    </div>
+
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="benefits__block d-flex align-items-center justify-content-center">
+                            <img src="./src/icons/icon-5.png" alt="icon-5" class="benefits__icon">
+                        </div>
+                    </div>
+                    <div class="col-4 align-self-start">
+                        <h4 class="benefits__title">Комфортное, прозрачное и простое подключение</h4>
+                        <p class="benefits__text">Мы подключаем дистанционно и бесплатно, Вам нет необходимости приезжать к нам! Вы присылаете нам копии документов, мы регистрируем Вас и присылаем данные для подключения, через 1-2 дня Вы можете начинать работать!</p>
+                    </div>
+
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="benefits__block d-flex align-items-center justify-content-center">
+                            <img src="./src/icons/icon-6.png" alt="icon-6" class="benefits__icon">
+                        </div>
+                    </div>
+                    <div class="col-4 align-self-start">
+                        <h4 class="benefits__title">Всегда большое количество заказов</h4>
+                        <p class="benefits__text">Приложение показывает, где на данный момент больше всего заказов и где действуют повышенные тарифы. У Вас не будет простоя и холостых пробегов. Наши пассажиры всегда приятные и абсолютно неконфликтные люди, которых приятно возить.</p>
+                    </div>
+
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="benefits__block d-flex align-items-center justify-content-center">
+                            <img src="./src/icons/icon-7.png" alt="icon-7" class="benefits__icon">
+                        </div>
+                    </div>
+                    <div class="col-4 align-self-start">
+                        <h4 class="benefits__title">Круглосуточная поддержка</h4>
+                        <p class="benefits__text">В Uber действует круглосуточная поддержка водителей по электронной почте. Если что-то непонятно, Вы всегда можете задать вопрос через On-line консультацию.</p>
+                    </div>
+
+                    <div class="col-2 d-flex justify-content-center">
+                        <div class="benefits__block d-flex align-items-center justify-content-center">
+                            <img src="./src/icons/icon-8.png" alt="icon-8" class="benefits__icon">
+                        </div>
+                    </div>
+                    <div class="col-4 align-self-start">
+                        <h4 class="benefits__title">Без шашечек и наклеек</h4>
+                        <p class="benefits__text">Вам не нужно менять цвет, устанавливать «шашки» на автомобиль и обклеивать его наклейками.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- КОНЕЦ ВТОРОЙ СЕКЦИИ -->
+
+        <!-- НАЧАЛО ТРЕТЬЕЙ СЕКЦИИ -->
+
+        <section class="mobile">
+            <div class="container">
+                <article class="label">
+                    Возможности
+                </article>
+                <article class="title">
+                    Мобильное приложение Убер
+                </article>
+                <article class="subtitle">
+                    Сделайте заказ, совершите поездку и оплатите ее стоимость, используя свой мобильный телефон
+                </article>
             </div>
 
             <div class="row">
-                
-                <div class="col">
-                    <div class="card mt-5 " style="width: 18rem;">
-                    <img src="https://m.media-amazon.com/images/I/51kK0zuk9rL._SL500_.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+                <div class="col-md-4">
+                    <div class="mobile__item">
+                        <img src="./src/img/card-1.png" alt="card-1">
+                        <div class="mobile__item-subtitle">оформление заказа одним касанием</div>
+                        <div class="mobile__item-plus"><img src="./src/icons/plus.png" alt="plus"></div>
                     </div>
                 </div>
-
-                <div class="col">
-                    <div class="card mt-5 " style="width: 18rem;">
-                    <img src="https://m.media-amazon.com/images/I/51kK0zuk9rL._SL500_.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+                <div class="col-md-4">
+                    <div class="mobile__item">
+                        <img src="./src/img/card-2.png" alt="card-2">
+                        <div class="mobile__item-subtitle">надежная подача</div>
+                        <div class="mobile__item-plus"><img src="./src/icons/plus.png" alt="plus"></div>
                     </div>
                 </div>
-
-                <div class="col">
-                    <div class="card mt-5 " style="width: 18rem;">
-                    <img src="https://m.media-amazon.com/images/I/51kK0zuk9rL._SL500_.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+                <div class="col-md-4">
+                    <div class="mobile__item">
+                        <img src="./src/img/card-3.png" alt="card-3">
+                        <div class="mobile__item-subtitle">прозрачные цены</div>
+                        <div class="mobile__item-plus"><img src="./src/icons/plus.png" alt="plus"></div>
                     </div>
                 </div>
-
+                <div class="col-md-4">
+                    <div class="mobile__item">
+                        <img src="./src/img/card-4.png" alt="card-4">
+                        <div class="mobile__item-subtitle">безналичная оплата</div>
+                        <div class="mobile__item-plus"><img src="./src/icons/plus.png" alt="plus"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mobile__item">
+                        <img src="./src/img/card-5.png" alt="card-5">
+                        <div class="mobile__item-subtitle">обратная связь</div>
+                        <div class="mobile__item-plus"><img src="./src/icons/plus.png" alt="plus"></div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="mobile__item">
+                        <img src="./src/img/card-6.png" alt="card-6">
+                        <div class="mobile__item-subtitle">разделить<br>стоимость поездки</div>
+                        <div class="mobile__item-plus"><img src="./src/icons/plus.png" alt="plus"></div>
+                    </div>
+                </div>
             </div>
-            
-            <div id="carouselExampleControls" class="carousel slide mt-5 mb-5" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="https://top-mmo.fr/wp-content/uploads/2022/05/Dark-Link-Zelda.jpg" class="d-block w-100" alt="link">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://top-mmo.fr/wp-content/uploads/2022/05/Dark-Link-Zelda.jpg" class="d-block w-100" alt="link">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="https://top-mmo.fr/wp-content/uploads/2022/05/Dark-Link-Zelda.jpg" class="d-block w-100" alt="link">
-                  </div>
-                </div>
-               <button class="carousel-control-prev" type="button" data-target="#carouselExampleControls" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-target="#carouselExampleControls" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </button>
-              </div>
 
-        </div>
+        </section>
+        
+        <!-- КОНЕЦ ТРЕТЬЕЙ СЕКЦИИ -->
 
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+        <!-- НАЧАЛО ЧЕТВЕРТОЙ СЕКЦИИ -->
+
+        <section class="opportunities">
+            <div class="container">
+                <article class="label">
+                    Возможности
+                </article>
+                <article class="title">
+                    Выбор - отличная штука!
+                </article>
+                <article class="subtitle">
+                    Закажите автомобиль, который подходит вам по стилю и бюджету
+                </article>
+                <article class="text">
+                    Машины на каждый день.
+                    <br>
+                    Лучше, быстрее и дешевле, чем такси
+                </article>
+            </div>
+        </section>
+
+        <!-- КОНЕЦ ЧЕТВЕРТОЙ СЕКЦИИ -->
     </body>
 </html>
