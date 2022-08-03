@@ -1,7 +1,15 @@
+$main-color: #1EACC7
+$second-color: #FF5656
+
 *
 	font-family: 'Roboto', sans-serif
 	--blue-color: #1EACC7
 	--pink-color: #FF5656
+
+=btn_hover
+	&:hover
+		background-image: none
+		background-color: $main-color
 
 header
 	position: relative
@@ -78,6 +86,7 @@ nav
 		font-size: 14px
 		font-weight: 400
 		text-transform: uppercase
+		+btn_hover
 
 .promo
 	min-height: 800px
@@ -129,6 +138,7 @@ nav
 	text-transform: uppercase
 	color: #FFFFFF
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+	+btn_hover
 
 .label
 	margin: 0 auto
