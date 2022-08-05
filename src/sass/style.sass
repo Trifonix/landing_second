@@ -302,8 +302,16 @@ nav
 				display: block
 				position: absolute
 				left: -32px
-				top: 50%
-				transform: translateY(-50%)
+				top: 3px
 				width: 21px
 				height: 20px
 				background: url(../icons/check_blue.png) center (center / cover) no-repeat
+	&__description
+		color: #1ca8c3
+	.warning
+		.require__title
+			color: $second-color
+		.require__list
+			li
+				&:before
+					background: url(../icons/check_red.png) center (center / cover) no-repeat	 
