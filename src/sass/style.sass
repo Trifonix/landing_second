@@ -204,14 +204,17 @@ nav
 	min-height: 864px
 	padding: 48px 0 79px 0
 	background: url('../img/mobile_bg.png') center (center / cover) no-repeat
+	
 	.row
 		margin-top: 32px
+	
 	&__item
 		position: relative
 		width: 320px
 		height: 280px
 		margin: 0 auto
 		margin-bottom: 19px
+		
 		&-subtitle
 			color: #ffffff
 			font-size: 24px
@@ -224,6 +227,7 @@ nav
 			top: 85px
 			right: 0
 			left: 0
+		
 		&-plus
 			width: 26px
 			height: 26px
@@ -238,6 +242,7 @@ nav
 			left: 50%
 			transform: translateX(-50%)
 			cursor: pointer
+			
 			&:before
 				content: ''
 				display: block
@@ -245,6 +250,7 @@ nav
 				height: 2px
 				background-color: $main-color
 				transition: 0.3s all
+			
 			&:after
 				content: ''
 				position: absolute
@@ -253,7 +259,9 @@ nav
 				height: 14px
 				background-color: $main-color
 				transition: 0.3s all
+			
 			&:hover
+				
 				&:before, &:after
 					background-color: $second-color
 
@@ -261,42 +269,53 @@ nav
 	min-height: 889px
 	padding: 48px 0 140px 0
 	background: url('../img/auto.png') center (center / cover) no-repeat
+	
 	.label
 		background: #FFFFFF
 		color: #070716
 		margin-top: 20px
+	
 	.title
 		color: #FFFFFF
 		margin-top: 27px
+	
 	.subtitle
 		color: #FFFFFF
 		margin-top: 2px
+	
 	.text
 		text-align: center
 		color: #222222
 		font-weight: 300
 		font-size: 17px
 		margin-top: 530px
+
 .require
 	padding: 68px 0 84px 0
+	
 	&__block
 		margin: 33px 0
+		
 		&-nmb
 			margin-bottom: 0px
+	
 	&__title
 		color: #1ca8c3
 		font-size: 22px
 		font-weight: 400
+	
 	&__list
 		list-style: none
 		padding-left: 50px
 		margin-top: 22px
+		
 		li
 			position: relative
 			font-size: 17px
 			font-weight: 300
 			line-height: 24px
 			margin-bottom: 10px
+			
 			&:before
 				content: ''
 				display: block
@@ -306,36 +325,105 @@ nav
 				width: 21px
 				height: 20px
 				background: url(../icons/check_blue.png) center (center / cover) no-repeat
+	
 	&__description
 		color: #1ca8c3
+	
 	.warning
+		
 		.require__title
 			color: $second-color
+		
 		.require__list
 			li
 				&:before
 					background: url(../icons/check_red.png) center (center / cover) no-repeat
+
 .world
 	min-height: 716px
 	padding: 48px 0 21px 0
 	background: url('../img/world_bg.png') center (center / cover) no-repeat
+	
 	.label
 		background: #FFFFFF
 		color: #070716
 		margin-top: 20px
+	
 	.title
 		color: #FFFFFF
 		margin-top: 27px
+	
 	.subtitle
 		color: #FFFFFF
 		margin-top: 3px
+	
 	.text
 		text-align: center
 		font-weight: 400
 		font-size: 15px
 		padding-top: 456px
 		text-transform: uppercase
+		
 		&__link
+			color: #1FBAD6
+			
+			&:hover
+				text-decoration: none
+				color: $second-color
+
+.footer
+	min-height: 154px
+	padding: 12px 0
+	
+	&__hr
+		background-color: #1FBAD6
+		width: 320px
+		height: 5px
+		margin: 0 auto
+	
+	&__row
+		max-width: 500px
+		margin: 0 auto
+	&__menu
+		display: flex
+		justify-content: space-between
+		padding: 35px 50px 5px 50px
+		margin: 0 auto
+		list-style: none
+	&__menu--item-link
+		font-weight: 300
+		font-size: 15px
+		color: #070716
+		text-transform: uppercase
+		&:hover
+			text-decoration: none
+			color: #070716
+	
+	&__row-second
+		max-width: 500px
+		margin: 0 auto
+	&__menu-second
+		display: flex
+		justify-content: space-between
+		margin: 0 auto
+		list-style: none
+		padding: 0 40px
+	&__menu--item-link-second
+		font-weight: 300
+		font-size: 11px
+		color: #999999
+		text-transform: uppercase
+		&:hover
+			text-decoration: none
+			color: #999999
+	
+	&__language
+		text-align: center
+		text-transform: uppercase
+		padding-top: 10px
+		font-size: 11px
+		font-weight: 400
+		&-link
 			color: #1FBAD6
 			&:hover
 				text-decoration: none
