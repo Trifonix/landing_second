@@ -9,7 +9,7 @@ $second-color: #FF5656
 =btn_hover
 	&:hover
 		background-image: none
-		background-color: $main-color
+		background-color: $second-color
 
 header
 	position: relative
@@ -38,6 +38,9 @@ nav
 	color: #fff
 	font-size: 15px
 	font-weight: 300
+	&:hover
+		color: #fff
+		text-decoration: none
 
 .subheader
 	position: absolute
@@ -73,8 +76,10 @@ nav
 		text-align: right
 		margin-top: 8px
 		line-height: 12px
+		&:hover
+			text-decoration: none
 
-	.btn
+	&__btn
 		margin-top: 19px
 		width: 172px
 		height: 46px
@@ -371,23 +376,50 @@ nav
 				text-decoration: none
 				color: $second-color
 
+footer
+	padding: 14px 23px 39px 23px
+
 .footer
-	min-height: 154px
-	padding: 12px 0
-	
-	&__hr
-		background-color: #1FBAD6
-		width: 320px
-		height: 5px
+	&__divider
+		width: 299px
+		height: 4px
+		background-color: #1fbad6
 		margin: 0 auto
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		padding-top: 32px
+	&__wrapper > div
+		width: 33%
+		&:nth-child(3)
+			display: flex
+			justify-content: flex-end
 	
+	&__social
+		width: 160px
+		display: flex
+		justify-content: space-between
+		&-item
+			display: flex
+			justify-content: center
+			align-items: center
+			margin: 0 4px
+			width: 32px
+			height: 32px
+			background-color: #070716
+			border-radius: 100%
+			&:hover
+				text-decoration: none
+			span
+				color: #fff
 	&__row
 		max-width: 500px
 		margin: 0 auto
 	&__menu
 		display: flex
 		justify-content: space-between
-		padding: 35px 50px 5px 50px
+		padding: 0px 50px 5px 50px
 		margin: 0 auto
 		list-style: none
 	&__menu--item-link
@@ -428,3 +460,11 @@ nav
 			&:hover
 				text-decoration: none
 				color: $second-color
+	
+	&__mobile
+		a
+			padding-right: 6px
+			&:hover
+				text-decoration: none
+			&:nth-last-child(1)
+				padding-right: 0
