@@ -378,10 +378,14 @@ footer
 		align-items: flex-start
 		padding-top: 32px
 	&__wrapper > div
-		width: 33%
+		&:nth-child(1)
+			width: 28%
+		&:nth-child(2)
+			min-width: 44%
 		&:nth-child(3)
 			display: flex
 			justify-content: flex-end
+			width: 28%
 	
 	&__social
 		width: 160px
