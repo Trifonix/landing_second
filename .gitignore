@@ -3,3 +3,6 @@
 # style.css
 # style.min.css
 # style.min.css.map
+node_modules
+*.json
+gulpfile.js
